@@ -1,0 +1,21 @@
+@import "base.css";
+
+:root {
+  --text: #6b6375;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: min(2vh, calc(2vw * 9 / 16)) var(--sans);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  user-select: none;
+}
+
+.drop-before::before,
+.drop-after::after {
+  display: none;
+  content: none;
+}
