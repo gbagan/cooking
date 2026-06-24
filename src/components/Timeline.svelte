@@ -105,8 +105,8 @@
 .tick {
   position: absolute;
   top: 0;
-  height: 190px;
-  border-left: 1px solid rgb(15 23 42 / 0.08);
+  height: 10rem;
+  border-left: 1px solid rgb(15 23 42 / 0.10);
 }
 
 .tick span {
@@ -128,14 +128,14 @@
 
 .machine-label {
   font-weight: 900;
-  color: #334155;
+  color: var(--slate-700);
 }
 
 .track {
   position: relative;
-  height: 4rem;
+  height: 4.5rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg, rgb(15 23 42 / 0.04) 1px, transparent 1px), #f8fafc;
+  background: linear-gradient(90deg, rgb(15 23 42 / 0.04) 1px, transparent 1px), var(--slate-50);
   background-size: 2.25rem 100%;
   border: 1px solid rgb(15 23 42 / 0.08);
   overflow: hidden;
@@ -144,7 +144,7 @@
 .block {
   position: absolute;
   top: 0.5rem;
-  height: 3rem;
+  height: 3.5rem;
   border-radius: 0.75rem;
   box-sizing: border-box;
   padding: 0.45rem 0.55rem;
@@ -156,6 +156,7 @@
   box-shadow: 0 8px 16px rgb(15 23 42 / 0.12);
   overflow: hidden;
   white-space: nowrap;
+  /* transition: left ease-in 200ms; */
 }
 
 .block strong {
@@ -176,25 +177,25 @@
 .explanation {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 10px;
+  gap: 0.625rem;
   margin-top: 0.875rem;
 }
 
 .explanation article {
   border-radius: 0.9rem;
-  background: #f8fafc;
+  background: var(--slate-50);
   border: 1px solid rgb(15 23 42 / 0.08);
-  padding: 12px;
+  padding: 0.65rem;
   display: grid;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .explanation strong {
-  color: #0f172a;
+  color: var(--slate-900);
 }
 
 .explanation span {
-  color: #64748b;
+  color: var(--slate-500);
   font-size: 0.9rem;
 }
 </style>
